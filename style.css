@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Protest+Riot&family=Protest+Strike&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Kode Mono", monospace;
+
+}
+
+.calculator-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+}
+
+.calculator{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #111122;
+    width:25%;
+    height: 70vh;
+    border-radius: 15px;
+}
+
+.calculator-content{
+    width:95%;
+    height: 95%;
+    background-color: #222244;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.visor{
+    width: 95%;
+    height: 15%;
+    background-color: #97c6d6;
+    margin-top: 15px;
+    border-radius: 10px;
+    color:black;
+    text-align: right;
+    font-size: 65px;
+}
+
+.button-container{
+    margin-top: 25px;
+    width: 95%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+button{
+    width: 23%;
+    height: 43%;
+    border:none;
+    border-radius: 6px;
+    margin:3px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.equal{
+width:48%;
+background-color: #ee8811;
+}
