@@ -38,6 +38,7 @@ body{
     display: flex;
     align-items: center;
     flex-direction: column;
+    text-wrap: wrap;
 }
 
 .visor{
@@ -67,6 +68,11 @@ button{
     margin:3px;
     font-size: 20px;
     font-weight: bold;
+    cursor:pointer;
+}
+
+button:hover{
+    background-color: #c1c1c1;
 }
 
 .equal{
@@ -74,10 +80,22 @@ width:48%;
 background-color: #ee8811;
 }
 
+.equal:hover{
+    background-color: #b86200;
+}
+
 .operator{
     background-color:#bb2525;
 }
 
+.operator:hover{
+    background-color: #880505;
+}
+
 .other{
     background-color: #999999;
+}
+
+.other:hover{
+    background-color: #555555;
 }
