@@ -8,6 +8,11 @@
 
 }
 
+body{
+    background-color:#d2d2ee;
+    height: 100vh;
+}
+
 .calculator-container{
     display: flex;
     justify-content: center;
@@ -56,7 +61,7 @@
 
 button{
     width: 23%;
-    height: 43%;
+    height: 9vh;
     border:none;
     border-radius: 6px;
     margin:3px;
@@ -67,4 +72,12 @@ button{
 .equal{
 width:48%;
 background-color: #ee8811;
+}
+
+.operator{
+    background-color:#bb2525;
+}
+
+.other{
+    background-color: #999999;
 }
