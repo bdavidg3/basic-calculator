@@ -31,38 +31,51 @@ operatorButtons.forEach(operator => {operator.addEventListener('click', () => {
                 break;
         
                 case'/':
-                operando = operando / operando2;
-                break;  
+                if (operando2 !== 0) {
+                    operando = operando / operando2;
+                } else {
+                    visor.textContent ="REALLY?"; 
+                    return;
+                }
+                break; 
         
                 case'*':
                 operando = operando * operando2;
-                break;    
+                break; 
+                
             }
-            operatorType = operator.textContent;
-            visor.textContent ="";
+                operatorType = operator.textContent;
+                visor.textContent ="";   
+                
     }
     })
 })
 
 equal.addEventListener('click',() => {
-    operando = parseFloat(operando);
-    operando2 = parseFloat(visor.textContent);
+        operando = parseFloat(operando);
+        operando2 = parseFloat(visor.textContent);
     switch(operatorType){
         case'+':
         operando = operando + operando2;
         break;  
-
+        
         case'-':
         operando = operando - operando2;
         break;
-
+        
         case'/':
-        operando = operando / operando2;
-        break;  
-
-        case'*':
-        operando = operando * operando2;
-        break;    
+        if(operando2==0){
+        operando="REALLY?"
+        break;
+        }
+        else{
+            operando = operando / operando2;
+            break;  
+        }
+        
+            case'*':
+            operando = operando * operando2;
+            break;    
     }
     operatorType ="";
     visor.textContent = operando;
