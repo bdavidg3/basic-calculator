@@ -4,6 +4,8 @@ const posNeg = document.querySelector('#posNeg');
 const equal = document.querySelector('.equal')
 const buttons = document.querySelectorAll('.button-container button');
 const operatorButtons = document.querySelectorAll('.operator');
+const del = document.querySelector('#del');
+
 let operatorType = "";
 let operando = "";
 let operando2 ="";
@@ -77,7 +79,8 @@ buttons.forEach(button => {
                 &&buttonText !== "+" 
                 &&buttonText !== "-" 
                 &&buttonText !== "*" 
-                &&buttonText !== "/" ){
+                &&buttonText !== "/"
+                &&buttonText !== "←" ){
             visor.textContent += buttonText;
         }}
     });
@@ -102,3 +105,7 @@ posNeg.addEventListener('click', () => {
     }
 });
 
+del.addEventListener('click', ()=>{
+    let currentText = visor.textContent;
+    visor.textContent = currentText.slice(0,-1);
+})
