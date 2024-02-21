@@ -102,13 +102,13 @@ background-color: #ee8811;
 
 @media screen and (max-width:700px) {
     .calculator{
-        width:60%;
-        height:40vh;
+        width:80%;
+        height:45vh;
     }
 
     button{
-        height:5vh;
-        margin:1px;
+        height:5.7vh;
+        margin:2px;
     }
 
     .visor{
