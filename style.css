@@ -99,3 +99,19 @@ background-color: #ee8811;
 .other:hover{
     background-color: #555555;
 }
+
+@media screen and (max-width:700px) {
+    .calculator{
+        width:60%;
+        height:40vh;
+    }
+
+    button{
+        height:5vh;
+        margin:1px;
+    }
+
+    .visor{
+        font-size:45px;
+    }
+}
